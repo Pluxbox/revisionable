@@ -196,7 +196,7 @@ trait RevisionableTrait
         return array_map(function ($attribute) {
             return ($attribute instanceof DateTime)
                 ? $this->fromDateTime($attribute)
-                : (string) $attribute;
+                : $attribute;
         }, $attributes);
     }
 
